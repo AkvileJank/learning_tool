@@ -127,6 +127,7 @@ def get_all_ids(all_questions):
 # which was created at the start of the program, returns question objects list
 def create_questions(all_questions):
     taken_ids = get_all_ids(all_questions)
+    print('Available types of questions are: "q" for quiz and "f" for free-form.')
     while True:
         try: 
             type = input('Type of question (to stop, press ctrl + c): ')
