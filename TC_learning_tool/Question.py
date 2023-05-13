@@ -28,15 +28,12 @@ class Question:
         elif self.type == "q":
             to_print_answer = deepcopy(self.answer)
             random.shuffle(to_print_answer)
-            return f"{self.q_text}\n{to_print_answer[0]}\n{to_print_answer[1]}\n{to_print_answer[2]}"
+            return f"{self.q_text}\n{to_print_answer[0].capitalize()}\n{to_print_answer[1].capitalize()}\n{to_print_answer[2].capitalize()}"
 
     def calculate_answered_percentage(self):
-        try:
             self.answered_percentage = round(
                 float(self.answered_correct / self.showed_times) * 100
             )
-        except ZeroDivisionError:
-            pass  # equal to 0 by default
 
     def details(self):
         if self.type == "q":

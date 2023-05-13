@@ -1,17 +1,22 @@
 from datetime import datetime
 
 class Score:
-    def __init__(self, correct=0, total=0, date_time=datetime.now()):
+    def __init__(self, correct=0, total=0, percentage=0):
         self.correct = correct
         self.total = total
-        self.date_time = date_time
+        self.percentage = percentage
+        self.date_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     def __str__(self):
-        return f"Score: {self.correct}/{self.total}, date: {self.date_time}"
+        return f"Score: {self.percentage}%, date: {self.date_time}"
+    
+    def calculate_percentage(self):
+        self.percentage = round(float(self.correct/self.total)*100)
     
     def show_to_user(self):
-        return f"Your score is: {self.correct}/{self.total}"
+        return f"Your score is: {self.percentage}%"
 
     def update_test_results(self):
         result_file = open("results.txt", "a")
         result_file.write(f"{self.__str__()}\n")
+        result_file.close()

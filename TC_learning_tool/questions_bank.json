@@ -1,1 +1,58 @@
-[{"ID": 161, "Type": "q", "Status": "Enabled", "Q": "Which of the following is not a principle of oop?", "Correct_A": "Mutual exclusion", "Incorrect_A1": "Abstraction", "Incorrect_A2": "Inheritance", "Showed_times": 2, "Answered_correct": 2, "Answered_correct(%)": 100}, {"ID": 684, "Type": "q", "Status": "Enabled", "Q": "What is the term for creating a new class from an existing class?", "Correct_A": "Inheritance", "Incorrect_A1": "Encapsulation", "Incorrect_A2": "Polymorphism", "Showed_times": 3, "Answered_correct": 1, "Answered_correct(%)": 33}, {"ID": 480, "Type": "q", "Status": "Enabled", "Q": "What is the term for creating multiple methods or functions with the same name but different parameters?", "Correct_A": "Overloading", "Incorrect_A1": "Polymorphism", "Incorrect_A2": "Encapsulation", "Showed_times": 7, "Answered_correct": 2, "Answered_correct(%)": 29}, {"ID": 956, "Type": "q", "Status": "Enabled", "Q": "What is the term for restricting access to certain data or methods of a class?", "Correct_A": "Encapsulation", "Incorrect_A1": "Abstraction", "Incorrect_A2": "Overriding", "Showed_times": 5, "Answered_correct": 1, "Answered_correct(%)": 20}, {"ID": 205, "Type": "f", "Status": "Enabled", "Q": "Which keyword is used to create an instance of a class in python?", "Correct_A": "Init", "Showed_times": 4, "Answered_correct": 1, "Answered_correct(%)": 33}, {"ID": 539, "Type": "f", "Status": "Enabled", "Q": "What is the process of creating a new instance of a class called?", "Correct_A": "Instantiation", "Showed_times": 5, "Answered_correct": 1, "Answered_correct(%)": 20}, {"ID": 798, "Type": "f", "Status": "Enabled", "Q": "What is the name of the attribute that refers to the current instance of a class within a method?", "Correct_A": "Self", "Showed_times": 3, "Answered_correct": 1, "Answered_correct(%)": 33}]
+[
+    {
+        "ID": 684,
+        "Type": "q",
+        "Status": "Enabled",
+        "Q": "What is the term for creating a new class from an existing class?",
+        "Correct_A": "inheritance",
+        "Incorrect_A1": "encapsulation",
+        "Incorrect_A2": "polymorphism",
+        "Showed_times": 5,
+        "Answered_correct": 2,
+        "Answered_correct(%)": 40
+    },
+    {
+        "ID": 480,
+        "Type": "q",
+        "Status": "Enabled",
+        "Q": "What is the term for creating multiple methods or functions with the same name but different parameters?",
+        "Correct_A": "overloading",
+        "Incorrect_A1": "polymorphism",
+        "Incorrect_A2": "encapsulation",
+        "Showed_times": 11,
+        "Answered_correct": 4,
+        "Answered_correct(%)": 40
+    },
+    {
+        "ID": 956,
+        "Type": "q",
+        "Status": "Enabled",
+        "Q": "What is the term for restricting access to certain data or methods of a class?",
+        "Correct_A": "encapsulation",
+        "Incorrect_A1": "abstraction",
+        "Incorrect_A2": "overriding",
+        "Showed_times": 9,
+        "Answered_correct": 3,
+        "Answered_correct(%)": 38
+    },
+    {
+        "ID": 539,
+        "Type": "f",
+        "Status": "Enabled",
+        "Q": "What is the process of creating a new instance of a class called?",
+        "Correct_A": "instantiation",
+        "Showed_times": 11,
+        "Answered_correct": 5,
+        "Answered_correct(%)": 45
+    },
+    {
+        "ID": 798,
+        "Type": "f",
+        "Status": "Enabled",
+        "Q": "What is the name of the attribute that refers to the current instance of a class within a method?",
+        "Correct_A": "self",
+        "Showed_times": 6,
+        "Answered_correct": 2,
+        "Answered_correct(%)": 33
+    }
+]
