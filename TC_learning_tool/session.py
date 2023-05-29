@@ -41,14 +41,13 @@ for free-form question write only one word!"
         self.json_file.update_questions_file(self.all_questions)
         txt_file.update_test_results(score)
 
-    def practice(self, practice_mode):
+    def practicing(self, practice_mode):
         self.answering_rules()
         practice_mode.practice(self.enabled_questions)
         self.json_file.update_questions_file(self.all_questions)
 
-    def statistics(self):
-        for question in self.all_questions:
-            print(question.show_statistics())
+    def statistics(self, statistics_mode):
+        statistics_mode.print_statistics(self.all_questions)
 
 
 
