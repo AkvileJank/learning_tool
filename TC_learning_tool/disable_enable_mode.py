@@ -1,6 +1,4 @@
-
 class Disable_enable_mode:
-
     def change_status(self, all_questions):
         while True:
             try:

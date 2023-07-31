@@ -1,6 +1,7 @@
 import random
 from copy import deepcopy
 
+
 class Question:
     def __init__(
         self,
@@ -31,9 +32,9 @@ class Question:
             return f"{self.q_text}\n{to_print_answer[0].capitalize()}\n{to_print_answer[1].capitalize()}\n{to_print_answer[2].capitalize()}"
 
     def calculate_answered_percentage(self):
-            self.answered_percentage = round(
-                float(self.answered_correct) / float(self.showed_times) * 100
-            )
+        self.answered_percentage = round(
+            float(self.answered_correct) / float(self.showed_times) * 100
+        )
 
     def details(self):
         if self.type == "q":
@@ -69,7 +70,7 @@ class Question:
             f"ID: {self.id}, Type: {self.type}, Status: {self.status}, \
 Times showed: {self.showed_times}, Answered correctly(%): {self.answered_percentage}%"
         )
-    
+
     @classmethod
     def get_enabled_questions(cls, all_questions):
         enabled_questions = []
@@ -77,7 +78,7 @@ Times showed: {self.showed_times}, Answered correctly(%): {self.answered_percent
             if question.status == "Enabled":
                 enabled_questions.append(question)
         return enabled_questions
-    
+
     @classmethod
     def get_all_ids(cls, all_questions):
         taken_ids = []
@@ -88,7 +89,7 @@ Times showed: {self.showed_times}, Answered correctly(%): {self.answered_percent
                 taken_ids.append(question.id)
             return taken_ids
 
-    @classmethod     
+    @classmethod
     def get_weights(cls, all_questions):
         weights_list = []
         for question in all_questions:

@@ -1,6 +1,4 @@
-
 class Session:
-
     def __init__(self, all_questions, enabled_questions, json_file):
         self.all_questions = all_questions
         self.enabled_questions = enabled_questions
@@ -8,10 +6,10 @@ class Session:
 
     def rules(self):
         print(
-        '\nChoose mode by entering:\n"add" for adding questions mode\n\
+            '\nChoose mode by entering:\n"add" for adding questions mode\n\
 "d/e" for disable/enable mode\n"stats" for statistics mode\n"practice"\
  for practice mode\n"test" for test mode\nTo exit program, type "exit" '
-    )
+        )
 
     def answering_rules(self):
         print(
@@ -24,8 +22,7 @@ for free-form question write only one word!"
             if add_mode.create_questions(self.all_questions) == False:
                 break
             self.json_file.update_questions_file(self.all_questions)
-        
-    
+
     def disable_enable(self, disable_enable_mode):
         disable_enable_mode.change_status(self.all_questions)
         self.json_file.update_questions_file(self.all_questions)
@@ -48,8 +45,3 @@ for free-form question write only one word!"
 
     def statistics(self, statistics_mode):
         statistics_mode.print_statistics(self.all_questions)
-
-
-
-
-

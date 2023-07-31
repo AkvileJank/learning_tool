@@ -4,6 +4,7 @@ from test_mode import Test_mode
 from practice_mode import Practice_mode
 from statistics_mode import Statistics_mode
 
+
 class Selecting_modes:
     def mode_input(self, enabled_questions):
         modes = {
@@ -11,7 +12,7 @@ class Selecting_modes:
             "d/e": Disable_enable_mode(),
             "stats": Statistics_mode(),
             "test": Test_mode(),
-            "practice": Practice_mode()
+            "practice": Practice_mode(),
         }
         mode = input("\nMode you want to access: ").lower()
         if mode in modes:
@@ -24,7 +25,7 @@ class Selecting_modes:
             return False
         else:
             print("Input is not valid, please try again")
-    
+
     def call_mode(self, mode, session, score, file):
         match mode:
             case Add_mode():
@@ -40,5 +41,5 @@ class Selecting_modes:
                 session.practicing(mode)
 
     def check_question_amount(self, enabled_questions):
-        if len(enabled_questions) <= 5:
+        if len(enabled_questions) < 5:
             return False

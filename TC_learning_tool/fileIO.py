@@ -1,8 +1,8 @@
 import json
 from question import Question
 
-class FileIO:
 
+class FileIO:
     def get_existing_questions(self):
         questions_as_obj = []
         file = open("questions_bank.json")
@@ -35,7 +35,7 @@ class FileIO:
             questions_as_obj.append(question_obj)
         file.close()
         return questions_as_obj
-    
+
     def update_questions_file(self, all_questions):
         all_questions_details = []
         for object in all_questions:

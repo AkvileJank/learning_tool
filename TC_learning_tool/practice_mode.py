@@ -1,8 +1,8 @@
 import random
 from question import Question
 
+
 class Practice_mode:
-    
     def practice(self, all_questions):
         print("To exit session, press ctrl+c anytime.")
         practicing = True
@@ -12,7 +12,7 @@ class Practice_mode:
             print(question)
             try:
                 question.showed_times += 1
-                user_answer = input("Your answer: ")
+                user_answer = input("Your answer: ").lower()
                 if question.type == "f":
                     if question.answer != user_answer:
                         print("Your answer is incorrect.")
@@ -31,4 +31,3 @@ class Practice_mode:
             except KeyboardInterrupt:
                 break
         print("\nYour practice is finished!")
-    

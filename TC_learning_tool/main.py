@@ -4,6 +4,7 @@ from question import Question
 from score import Score
 from selecting_modes import Selecting_modes
 
+
 def main():
     working = True
     while working:
@@ -18,15 +19,12 @@ def main():
             mode = selecting_modes.mode_input(enabled_questions)
             if mode == False:
                 working = False
-            if selecting_modes.call_mode(mode, session, score, file) == False:
-                working = False
+            selecting_modes.call_mode(mode, session, score, file)
         except KeyboardInterrupt:
             working = False
         except:
-            print("Sorry, something went wrong. Try again.")            
-    
+            print("Sorry, something went wrong. Try again.")
+
 
 if __name__ == "__main__":
     main()
-
-            

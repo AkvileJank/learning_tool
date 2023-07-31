@@ -1,7 +1,7 @@
 import random
 
-class Test_mode:
 
+class Test_mode:
     def get_amount_for_test(self, all_questions):
         while True:
             try:
@@ -23,14 +23,14 @@ class Test_mode:
                 continue
             except KeyboardInterrupt:
                 return None
-            
+
     def collect_test_questions(self, all_questions):
         number_of_questions = self.get_amount_for_test(all_questions)
         if not number_of_questions:
             return None
         test_questions = random.sample(all_questions, k=number_of_questions)
         return test_questions
-    
+
     def testing(self, test_questions, score):
         if not test_questions:
             return None
@@ -54,6 +54,3 @@ class Test_mode:
                     score.correct += 1
                     question.answered_correct += 1
             question.calculate_answered_percentage()
-    
-
-    

@@ -1,9 +1,8 @@
 import re
-import random
 from question import Question
 
-class Add_mode:
 
+class Add_mode:
     def add_answer(self, q_type):
         if q_type == "f":
             answer = input("Answer: ").lower()
@@ -37,8 +36,9 @@ class Add_mode:
             if not all_questions:
                 id = 1
             else:
-                id = taken_ids[len(all_questions)-1] + 1
-            
+                id = taken_ids[len(all_questions) - 1] + 1
+                # id = taken_ids[-1] + 1
+
             question = Question(type, q_text, answer, id)
             all_questions.append(question)
             print("Question was added successfully!")
