@@ -1,5 +1,7 @@
 # Project Title: Study buddy
 
+<img width="746" alt="Screenshot 2023-08-01 at 21 45 16" src="https://github.com/AkvileJank/learning_tool/assets/117858773/7cfe41b9-0eee-484e-b5ba-3f5399a4619e">
+
 This pure Python project is a simple learning management tool that allows users to create, practice, and test their knowledge using multiple-choice and freeform text questions. The program tracks user performance and has multiple options to manage the questions.
 
 ## Supported features:
